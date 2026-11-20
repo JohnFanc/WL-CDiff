@@ -1,0 +1,22 @@
+{
+  "hashes_checked": 0,
+  "processed": {
+    "v1": {
+      "train": 1350,
+      "val": 150,
+      "test": 100
+    },
+    "v1_s18": {
+      "train": 1350,
+      "val": 150,
+      "test": 100
+    }
+  },
+  "raw_observation_files_checked": 6700,
+  "raw_heads_checked": 1600,
+  "model_smoke_check": "Passed CPU forward checks for 4/9/18/36 sensors, a 4-sensor backward pass, and identity metric checks; random untrained model, no training accuracy assessed.",
+  "cache_rebuild": "Exact array equality for all train/validation HDF5 datasets compared with provided 36-well caches.",
+  "excluded": "Historical weights, checkpoints, predictions, output metric tables, training logs, finished figures, legacy caches, editor metadata, bytecode.",
+  "source_py_files": 47,
+  "full_training_or_historical_result_reproduction": false
+}

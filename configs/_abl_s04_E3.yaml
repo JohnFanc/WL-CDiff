@@ -1,0 +1,93 @@
+project:
+  seed: 42
+  device: cuda
+paths:
+  sensors_csv: configs/sensors_36.csv
+  train_split_dir: dataset/v1/train
+  test_split_dir: dataset/v1/test
+  heads_subdir: heads
+  obdata_subdir: obData
+  train_field_dir: dataset/v1/train/fields
+  test_field_dir: dataset/v1/test/fields
+  processed_dir: dataset/processed
+  train_ob_dir: dataset/v1/train/obData
+  test_ob_dir: dataset/v1/test/obData
+  train_h5: dataset/processed/train.h5
+  val_h5: dataset/processed/val.h5
+  test_h5: dataset/processed/test.h5
+  stats_json: dataset/processed/stats.json
+  output_dir: outputs
+  ckpt_dir: outputs/checkpoints
+  best_ckpt: outputs/checkpoints/best.pt
+  last_ckpt: outputs/checkpoints/last.pt
+  infer_dir: outputs/infer
+  viz_dir: outputs/viz
+  sensor_pos_fig: outputs/viz/sensor_locations.png
+data:
+  grid_size: 50
+  num_steps: 51
+  val_ratio: 0.1
+  split_seed: 42
+  field_kind: lnk
+model:
+  ablation:
+    disable_token_to_cond_map: false
+    global_broadcast_channels: 0
+    disable_global_to_adagn: true
+    disable_sensor_mid_cross_attn: false
+  sensor_temporal:
+    in_dim: 3
+    d_model: 64
+    nhead: 4
+    num_layers: 2
+    dim_feedforward: 128
+    dropout: 0.1
+    max_steps: 51
+  sensor_set:
+    coord_bands: 8
+    model_dim: 128
+    nhead: 4
+    num_layers: 2
+    dropout: 0.1
+    global_dim: 256
+    grid_size: 50
+  cond_decoder:
+    grid_size: 50
+    sensor_dim: 128
+    cond_dim: 96
+    num_heads: 4
+    coord_bands: 8
+  unet:
+    in_channels: 1
+    cond_channels: 96
+    channels:
+    - 64
+    - 128
+    - 256
+    time_dim: 256
+    global_dim: 256
+    sensor_dim: 128
+    attn_heads: 4
+diffusion:
+  timesteps: 300
+  ddim_steps: 100
+  cfg_dropout: 0.1
+loss:
+  lv: 1.0
+  lx0: 0.5
+  lfft: 0.05
+  ltv: 0.001
+training:
+  epochs: 2000
+  batch_size: 12
+  lr: 0.0002
+  weight_decay: 0.0001
+  amp: true
+  ema_decay: 0.999
+  grad_clip: 1.0
+  num_workers: 4
+  log_every: 20
+inference:
+  num_samples: 8
+  cfg_scale: 2.0
+  ddim_steps: 100

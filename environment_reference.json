@@ -1,0 +1,11 @@
+{
+  "python": "3.9.25",
+  "torch": "2.8.0+cu128",
+  "cuda_runtime": "12.8",
+  "numpy": "2.0.1",
+  "h5py": "3.14.0",
+  "PyYAML": "6.0.2",
+  "matplotlib": "3.9.2",
+  "Pillow": "11.1.0",
+  "note": "Installed local environment observed during release validation; not a recovered environment lock from the historical experiments."
+}

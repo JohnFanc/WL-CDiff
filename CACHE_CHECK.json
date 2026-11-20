@@ -1,0 +1,16 @@
+{
+  "train": {
+    "lnk": true,
+    "obs_feat": true,
+    "sample_id": true,
+    "sensor_xy": true,
+    "times": true
+  },
+  "val": {
+    "lnk": true,
+    "obs_feat": true,
+    "sample_id": true,
+    "sensor_xy": true,
+    "times": true
+  }
+}
