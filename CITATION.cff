@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "Please cite the archived WL-CDiff data and code when using this software."
+type: software
+title: "WL-CDiff: synthetic groundwater datasets and code for hydraulic conductivity inversion"
+version: 1.0.0
+doi: 10.5281/zenodo.24384634
+repository-code: "https://github.com/JohnFanc/WL-CDiff"
+url: "https://doi.org/10.5281/zenodo.24384634"
+license: MIT
+authors:
+  - family-names: "Ma"
+    given-names: "Chunmei"
+    affiliation: "School of Computer and Information Engineering, Tianjin Normal University, Tianjin 300387, China"
+  - family-names: "Fan"
+    given-names: "Xiangfeng"
+    affiliation: "School of Computer and Information Engineering, Tianjin Normal University, Tianjin 300387, China"
+  - family-names: "Hao"
+    given-names: "Yonghong"
+    affiliation: "Tianjin Key Laboratory of Water Resources and Environment, Tianjin Normal University, Tianjin 300387, China"
+  - family-names: "Liu"
+    given-names: "Fei"
+    affiliation: "School of Water Conservancy and Hydropower, Hebei University of Engineering, 19 Taiji Road, Handan, Hebei 056038, China"
+  - family-names: "Yeh"
+    given-names: "Tian-Chyi Jim"
+    affiliation: "Department of Hydrology and Atmospheric Sciences, The University of Arizona, John W. Harshbarger Building, 1133 E. North Campus Drive, Tucson, AZ 85721-0011, USA"
+  - family-names: "Yang"
+    given-names: "Yixiao"
+    affiliation: "School of Computer and Information Engineering, Tianjin Normal University, Tianjin 300387, China"
+  - family-names: "Li"
+    given-names: "Junhao"
+    affiliation: "School of Computer and Information Engineering, Tianjin Normal University, Tianjin 300387, China"
+  - family-names: "Li"
+    given-names: "Xingen"
+    affiliation: "School of Computer and Information Engineering, Tianjin Normal University, Tianjin 300387, China"

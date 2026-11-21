@@ -6,7 +6,9 @@ This package provides synthetic input/reference datasets and source code for pre
 
 ## Data download
 
-The datasets are distributed separately from this code repository. A companion Zenodo record has been reserved as DOI `10.5281/zenodo.24384634`; publication is pending. After the record is published, download the complete archive and extract it. Either run the included code directly from the extracted archive, or copy its `dataset/` directory and `SHA256SUMS.csv` into this repository root. The manifest verifies the complete archive; it is not a manifest of this code-only repository.
+Data and a matching code snapshot are archived at https://doi.org/10.5281/zenodo.24384634 (version 1.0.0). Download all six numbered ZIP files and extract them into the **same parent directory**. Each ZIP can be independently extracted; together they reconstruct `WL-CDiff_public_data_code_2026-11-19/`. Read `README_DOWNLOAD.txt` and `RELEASE_LICENSES.txt` on the archive page. `SPLIT_ARCHIVES.json` lists the SHA-256 checksum of each ZIP.
+
+Run the code in the reconstructed directory, or copy its `dataset/` directory and `SHA256SUMS.csv` into this repository root. `SHA256SUMS.csv` verifies the original complete package, not subsequent repository metadata updates. No model weights are supplied.
 
 ## Contents
 
@@ -72,6 +74,8 @@ SSIM in `src/utils/metrics.py` is computed once over all grid cells per field pa
 
 The original field-generation and MODFLOW project files were not present in the selected source tree. Included simulated heads are dataset inputs, not withheld model-inversion outputs. See `PACKAGING_CHANGES.md` and `VALIDATION_REPORT.json` for the inspected scope.
 
-## Repository publication
+## License and citation
 
-Code repository: https://github.com/JohnFanc/WL-CDiff. The companion Zenodo record is being prepared; the reserved DOI becomes active only upon publication. Author metadata and reuse licenses are pending confirmation. No model weights or historical predictions are distributed or promised on request.
+Code and software documentation are licensed under MIT (see `LICENSE`). The datasets in the companion archive are licensed under CC BY 4.0. See `RELEASE_LICENSES.txt` for scope. Third-party dependencies retain their own licenses.
+
+Please cite the archived version using DOI https://doi.org/10.5281/zenodo.24384634. Author metadata is provided in `CITATION.cff`. The article citation will be added when available. Code repository: https://github.com/JohnFanc/WL-CDiff.

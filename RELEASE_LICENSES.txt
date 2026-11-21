@@ -1,0 +1,18 @@
+WL-CDiff version 1.0.0: licensing and release information
+
+Code and accompanying software documentation: MIT License, provided in LICENSE.
+Datasets: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/ . Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode . This covers the dataset/ directory, including reference fields, simulated heads, monitoring observations, processed data and sample split information.
+Third-party software dependencies retain their respective licenses and are not relicensed by this notice.
+
+These permissions apply to the corresponding contents of all six WL-CDiff_01 through WL-CDiff_06 ZIP files in this record. The MIT and CC BY licenses apply to different components; they are not alternative licenses for the entire record.
+
+Authors, in order: Chunmei Ma, Xiangfeng Fan, Yonghong Hao, Fei Liu, Tian-Chyi Jim Yeh, Yixiao Yang, Junhao Li, Xingen Li.
+Corresponding author: Yonghong Hao (haoyh@sxu.edu.cn).
+Archive DOI: https://doi.org/10.5281/zenodo.24384634
+Code repository: https://github.com/JohnFanc/WL-CDiff
+
+Please cite the archive DOI when using these materials. A citation to the associated article can be added when its final publication details are available.
+
+This release notice supplies the final author and license metadata and the split-archive download instructions. It supersedes pre-publication statements about pending authors/licenses and a single complete ZIP in the bundled README files. The original six ZIP archives are unchanged to preserve their validated contents and integrity checks.
+
+No model weights, historical model predictions, experiment metric tables/logs or finished paper figures are distributed. Simulated hydraulic heads and reference K/lnK fields are included as input data and reference labels. Re-training is required before inference. No claim is made that a new training run will reproduce every published numerical result exactly.
